@@ -1,0 +1,53 @@
+.Landing-page{
+    background-color: #F5F6FA;
+    min-height: 100vw;
+.faixa-exercicio-01{
+    display: flex;
+    margin-top: 80px;
+    margin-left: 70px;
+    flex-direction: column;
+
+    gap: 20px;
+
+    
+
+    img{
+        display: flex;
+        width: 30px;
+    }
+
+    .linha{
+        width: 1130px;
+        height: 4px;
+        background-color: #FFCE37;
+        border-radius: 20px;
+    }
+
+    .cima{
+        display: flex;
+        flex-direction: row;
+    }
+
+ 
+}
+.info-exercicio-01{
+    display: flex;
+    
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+
+    div{
+        width: 1080px;
+        background-color: white ;
+        padding: 80px 75px;
+    }
+
+    p{
+        text-align: center;
+        font: 400 14px "Roboto";
+        
+    }
+}
+
+}

@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.Landing-page{
+  font-family: "Roboto";
+  font-size: 700;
+  background-color:#F5F6FA;
+
+
+  .faixa-cima{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color:#6278F7;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  
+  .faixa-cima > .div-faixa, img{
+    display: flex;
+    height:90%;
+    margin-left: 30px;
+  
+    align-items: center;
+  
+    gap: 30px;
+    color: white  ;
+  }
+  
+  .faixa-cima > nav {
+    display: flex;
+    gap: 10px;
+    
+  }
+  
+  .faixa-cima > nav > li, .oi {
+    display: flex;
+    text-decoration: none;
+    margin-right: 10px;
+  
+    color: white;
+  }
+
+
+
+
+
+  //faixa-baixo
+
+   .faixa-exercicios{
+    padding: 5%  8%;
+    background-color:#F5F6FA;
+    height: 100vh;
+   }
+   .cartao1, .cartao{
+    background-color: white;
+    width: 200px;
+    height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    
+    border-radius: 15px;
+    
+
+   }
+   .cartoes > .cartao{
+    text-decoration: none;
+   }
+
+   .cartao1, p{
+    color: black;
+
+    font-weight: 400;
+    font-size: 13px;
+   }
+
+   .faixa-exercicios > .cartoes > .cartao > .cartao1 > .cor1{
+    width: 40px;
+    height: 40px;
+    background-color: #FFCE37;
+
+    border-radius: 10px;
+   }
+   .faixa-exercicios > .cartoes > .cartao > .cartao1 > .cor2{
+    width: 40px;
+    height: 40px;
+    background-color: #B3FF37;
+
+    border-radius: 10px;
+   }
+   .faixa-exercicios > .cartoes > .cartao > .cartao1 > .cor3{
+    width: 40px;
+    height: 40px;
+    background-color: #37FFF3;
+
+    border-radius: 10px;
+   }
+
+   .faixa-exercicios >.cartoes{
+   margin-top: 50px;
+   display: flex  ;
+
+   gap: 45px;
+   }
+
+
+
+
+
+
+
+
+   .cartao1:hover{
+    margin-right: 4px;
+    margin-bottom: 4px;
+
+    box-shadow: 15px 15px 15px grey;
+   }
+}
+
+
+

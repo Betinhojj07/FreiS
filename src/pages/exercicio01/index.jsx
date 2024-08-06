@@ -12,7 +12,7 @@ export default function Exercicio01(){
      
   
           <nav>
-          <li><a className='oi' href="">Inicio</a></li>
+          <li><Link className='oi' to="/">Inicio</Link></li>
           <li><Link className='oi' to="/sobre">Sobre</Link></li>
           </nav>
         </section>
@@ -21,7 +21,7 @@ export default function Exercicio01(){
             <div className='cima'>
 
             <div className='seta-voltar'>
-                <Link><img src='/assets/img/voltar.png'></img></Link>
+                <Link to="/"><img src='/assets/img/voltar.png'></img></Link>
             </div>
             <div className='titulo'>
                 <h2>Exercicio 01 - Cupom de desconto</h2>

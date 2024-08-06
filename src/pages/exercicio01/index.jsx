@@ -1,7 +1,19 @@
 import './index.scss';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 export default function Exercicio01(){
+
+const [num1, setNum1]=useState(0)
+const [num2, setNum2]=useState(0)
+const [res, setRes]=useState(0)
+
+function somar(){
+    let a = Number(num1) + Number()
+    let nv = (Number(num1) * Number(num2)) / 100
+    setRes(vl)
+}
+
     return(
         <div className="Landing-page">
         <section className='faixa-cima'>
@@ -37,6 +49,21 @@ export default function Exercicio01(){
                 <p>Implementar um programa em Javascript para calcular o valor final de uma compra a partir do valor da compra e do cupom de desconto. O cupom diz quantos reais terá de desconto.</p>
             </div>
 
+        </div>
+
+        <div className='exercicio-exe'>
+
+            <div className='pedido'>
+                <label htmlFor="">Informe o valor do pedido</label>
+                <input type="text"  value={num1} onChange={e => setNum1(e.target.value)}/>
+
+                <label htmlFor="">Informe o valor do Cupom</label>
+                <input type="text" value={num2} onChange={e => setNum2(e.target.value)} />
+
+                <button className='executar' onClick={somar}>Executar</button>
+
+            </div>
+            <p>O Resultado total é {res}</p>
         </div>
        
         </div>

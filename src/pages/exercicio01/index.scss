@@ -14,7 +14,7 @@
     img{
         display: flex;
         width: 30px;
-        margin-top: 5px;
+        margin-top: 1px;
     }
 
     .linha{
@@ -43,13 +43,54 @@
     div{
         width: 1080px;
         background-color: white ;
-        padding: 80px 75px;
+        padding: 80px 25px;
     }
 
     p{
         text-align: center;
         font: 400 14px "Roboto";
         
+    }
+
+}
+
+.exercicio-exe{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    flex-direction: column;
+    gap: 10px;
+    .pedido{
+        display: flex;
+        background-color: white;
+        flex-direction: column;
+
+        padding: 30px;
+        gap: 10px;
+    }
+    input{
+        padding: 5px;
+        width: 250px;
+
+        border-radius: 5px;
+        border-width: 1px;
+    }
+
+    .executar{
+        background-color: #6278F7;
+        border-style: none;
+        padding: 15px;
+        width: 120px;
+        color: white;
+        border-radius: 5px;
+
+        margin-left: 140px;
+        margin-top: 15px;
+    }
+    p{
+        margin-left: 140px;
     }
 
 }

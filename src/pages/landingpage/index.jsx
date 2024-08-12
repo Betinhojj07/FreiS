@@ -30,16 +30,23 @@ export default function App() {
               <p>exercício 1</p>
             </div>
           </Link>
-          <Link className='cartao' to="/">
+          <Link className='cartao' to="/Exercicio02">
              <div className='cartao1'>
               <div className='cor2'></div>
               <p>Converter Kg/gramas</p>
               <p>exercício 2</p>
             </div>
           </Link>
-          <Link className='cartao' href="#">
+          <Link className='cartao' to="/Exercicio03">
              <div className='cartao1'>
               <div className='cor3'></div>
+              <p>Cupom de desconto </p>
+              <p>exercício 3</p>
+            </div>
+          </Link>
+          <Link className='cartao' to="/Exercicio011">
+             <div className='cartao1'>
+              <div className='cor11'></div>
               <p>Cupom de desconto </p>
               <p>exercício 3</p>
             </div>

@@ -1,0 +1,129 @@
+.Landing-page{
+    background-color: #F5F6FA;
+    min-height: 100vw;
+.faixa-exercicio-01{
+    display: flex;
+    margin-top: 80px;
+    margin-left: 70px;
+    flex-direction: column;
+
+    gap: 20px;
+
+    
+
+    img{
+        display: flex;
+        width: 30px;
+        margin-top: 1px;
+    }
+
+    .linha03{
+        width: 1130px;
+        height: 4px;
+        background-color: #37FFF3;
+        border-radius: 20px;
+    }
+
+    .cima{
+        display: flex;
+        flex-direction: row;
+        gap: 18px;
+        margin-left: -30px;
+    }
+
+ 
+}
+.info-exercicio-01{
+    display: flex;
+    
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+
+    div{
+        width: 1080px;
+        background-color: white ;
+        padding: 80px 25px;
+    }
+
+    p{
+        text-align: center;
+        font: 400 14px "Roboto";
+        
+    }
+
+}
+
+.exercicio-exe{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    flex-direction: column;
+    gap: 10px;
+    .pedido-exercicio03{
+        display: flex;
+        background-color: white;
+        flex-direction: column;
+
+        width: 800px;
+
+        padding: 30px;
+        gap: 20px;
+
+
+        .container-acai{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            gap: 15px;
+        }
+
+        .qtd{
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            justify-content: center;
+            align-items: center;
+
+            label{
+                display: flex;
+                font: 600 14px "Roboto";
+            }
+        }
+
+        .bt-executar{
+            display: flex;
+            justify-content: end;
+            margin-left: 100px;
+        }
+    }
+    .ip01{
+        display: flex;
+        padding: 5px;
+        width: 100px;
+
+        border-radius: 5px;
+        border-width: 1px;
+    }
+
+    .executar{
+        background-color: #6278F7;
+        border-style: none;
+        padding: 15px;
+        width: 120px;
+        color: white;
+        border-radius: 5px;
+
+        margin-left: 140px;
+        margin-top: 15px;
+    }
+    p{
+        margin-left: 140px;
+    }
+
+}
+
+}

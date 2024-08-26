@@ -1,34 +1,31 @@
 import './index.scss';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import Cabecalho from '../components/cabecalho';
 
-export default function Exercicio011(){
+export default function Exercicio11(){
 
 const [num1, setNum1]=useState(0)
-const [num2, setNum2]=useState(0)
-const [num3, setNum3]=useState(0)
-const [res, setRes]=useState(0)
+const [res, setRes]=useState([])
 
-function somar(){
-    let vl = (num1 * 13.50) + (num2 * 15) + (num3 * 17.50)
-    setRes(vl)
+
+function introduzir(){
+    let tabuada = [];
+
+    for(let i = 0; i<=10;i++){
+        let mult = i * num1
+        let Resultado = `${num1} x ${i} = ${mult}`
+
+        tabuada.push(Resultado)
+    }
+    setRes(tabuada)
+
 }
 
     return(
         <div className="Landing-page">
-        <section className='faixa-cima'>
-          <div className='div-faixa'>
-           <img src="/assets/img/imgfrei.png" alt="" />
-            <h3>React FreiS</h3>
-          </div>
-     
-  
-          <nav>
-          <li><Link className='oi' to="/">Inicio</Link></li>
-          <li><Link className='oi' to="/sobre">Sobre</Link></li>
-          </nav>
-        </section>
 
+<Cabecalho/>
         <div className='faixa-exercicio-01'>
             <div className='cima'>
 
@@ -56,19 +53,23 @@ function somar(){
             <div className='pedido-exercicio03'>
                 <div className='container-acai'>
                 <div className='qtd'>
-                <label htmlFor="">Quantidade pequeno</label>
+                <label htmlFor="">Tabuada</label>
                 <input type="text"  value={num1} onChange={e => setNum1(e.target.value)}/>
                 </div>
             
                 </div>
     
                 <div className='bt-executar'>
-                <button className='executar' onClick={somar}>Executar</button>
+                <button className='executar' onClick={introduzir} >Executar</button>
                 </div>
 
                 </div>
+        {
+            res.map(item => (
+                <p>{item}</p>
+            ))
 
-            <p>Resultado: O total é R${res}</p>
+        }
         </div>
        
         </div>

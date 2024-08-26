@@ -1,6 +1,7 @@
 import './index.scss';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import Cabecalho from '../components/cabecalho';
 
 export default function Exercicio02(){
 
@@ -14,18 +15,7 @@ function somar(){
 
     return(
         <div className="Landing-page">
-        <section className='faixa-cima'>
-          <div className='div-faixa'>
-           <img src="/assets/img/imgfrei.png" alt="" />
-            <h3>React FreiS</h3>
-          </div>
-     
-  
-          <nav>
-          <li><Link className='oi' to="/">Inicio</Link></li>
-          <li><Link className='oi' to="/sobre">Sobre</Link></li>
-          </nav>
-        </section>
+<Cabecalho/>
 
         <div className='faixa-exercicio-01'>
             <div className='cima'>

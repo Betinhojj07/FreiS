@@ -5,9 +5,11 @@ import Cabecalho from '../components/cabecalho';
 
 export default function Exercicio10(){
 
-const [num1, setNum1]=useState(0)
-const [num2, setNum2]=useState(0)
+const [num1, setNum1]=useState()
+const [num2, setNum2]=useState()
 const [res, setRes]=useState([])
+
+
 
 
 function situacao(){
@@ -34,6 +36,13 @@ let a=  `Altura ${num1} | Peso ${num2} | ${b} | seu IMC é ${calc.toFixed(2)}`
 
 
 setRes([...res, a])
+setNum1()
+setNum2()
+}
+
+function Apagar(index){
+    const novaLista = res.filter((item, idx) => idx !==index)
+    setRes(novaLista)
 }
 
     return(
@@ -91,15 +100,21 @@ setRes([...res, a])
                 </div>
  
         </div>
+        
         <div className='mapear'>
         {
-            res.map(item => (
+            res.map((item, idx) => (
 
-                <div className='coloracao-exercicio-10'>
-                     <p>{item}</p>
+                <div className='resultados'>
+                    <div className='texto-resultado'>
+                    <p className='coloracao-exercicio-10'>{item}</p>
+                    </div>
+                     
+                    <button onClick={() => Apagar(idx)} className='excluir'><img className='icone-trash' src="/assets/img/icons8-trash.svg" alt="" /></button>
                 </div>
                
             ))
+          
 
         }
         </div>

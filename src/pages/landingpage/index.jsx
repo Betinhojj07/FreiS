@@ -31,6 +31,18 @@ export default function App() {
     subtitulo : "exercício 4"
   },
   {
+    card : '/Exercicio5',
+    cor :'cor5',
+    titulo :"Média de notas",
+    subtitulo : "exercício 5"
+  },
+  {
+    card : '/Exercicio6',
+    cor :'cor6',
+    titulo :"Salário liquido",
+    subtitulo : "exercício 6"
+  },
+  {
     card : '/Exercicio10',
     cor :'cor10',
     titulo :"Calculo do IMC com histórico",

@@ -25,6 +25,12 @@ export default function App() {
     subtitulo : "exercício 3"
   },
   {
+    card : '/Exercicio4',
+    cor :'cor4',
+    titulo :"Leitura do livro",
+    subtitulo : "exercício 4"
+  },
+  {
     card : '/Exercicio10',
     cor :'cor10',
     titulo :"Calculo do IMC com histórico",
@@ -36,6 +42,7 @@ export default function App() {
     titulo :"Tabuada",
     subtitulo : "exercício 11"
   }
+
     
 ]
 

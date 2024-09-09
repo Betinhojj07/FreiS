@@ -5,17 +5,18 @@ import Cabecalho from '../components/cabecalho';
 
 export default function Exercicio7(){
     
-const [num1, setNum1]=useState(0)
-const [num2, setNum2]=useState(0)
-const [num3, setNum3]=useState(0)
+const [num1, setNum1]=useState('')
+const [num2, setNum2]=useState('')
 const [res, setRes]=useState()
 
 function somar(){
-let div = (1+num2)/100
-let mult = num1 * div
-let calculo = mult - 300
-
-setRes(`o salário liquido é de R$${calculo.toFixed(2)}`)
+    let cor_primaria =true
+if(num1 ==="amarelo"|| num1 ==="vermelho" || num1 ==="azul" && num2==="amarelo"||num2==="vermelho"||num2==="azul"){
+    setRes(`As duas cores são primárias? ${cor_primaria}`)
+}else {
+    cor_primaria = false
+    setRes(`As duas cores são primárias? ${cor_primaria}`)
+}
 }
 
     return(
@@ -29,17 +30,17 @@ setRes(`o salário liquido é de R$${calculo.toFixed(2)}`)
                 <Link to="/"><img src='/assets/img/voltar.png'></img></Link>
             </div>
             <div className='titulo'>
-                <h2>Exercício 06 - Salário líquido</h2>
+                <h2>Exercício 07 - Cores primárias</h2>
             </div>
             </div>
-            <div className='linha06'></div>
+            <div className='linha07'></div>
             
 
         </div>
 
         <div className='info-exercicio-01'>
             <div>
-                <p>Implemente um programa em javascript para <span>calcular o salário líquido</span>  de um funcionário, a partir de seu salário base, do bônus mensal em porcentagem e do total de descontos em reais</p>
+                <p>Implementar um programa em javascript para <span> verificar </span>se duas cores são primárias</p>
             </div>
 
         </div>
@@ -49,22 +50,18 @@ setRes(`o salário liquido é de R$${calculo.toFixed(2)}`)
             <div className='pedido-exercicio05'>
                 <div className='container-livro'>
                 <div className='qtd'>
-                <label htmlFor="">Salário Base</label>
+                <label htmlFor="">Cor 1</label>
                 <input className='ip5' type="text"  value={num1} onChange={e => setNum1(e.target.value)}/>
                 </div>
                 
                 <div className='qtd'>
 
-                <label htmlFor="">Bônus mensal em porcentagem</label>
+                <label htmlFor=""> Cor 2</label>
                 <input className='ip5' type="text" value={num2} onChange={e => setNum2(e.target.value)} />
                 </div>
 
 
-                <div className='qtd'>
-
-                <label htmlFor="">Total de descontos</label>
-                <input className='ip5' type="text" value={num3} onChange={e => setNum3(e.target.value)} />
-                </div>
+              
                 </div>
     
                 <div className='bt-executar'>

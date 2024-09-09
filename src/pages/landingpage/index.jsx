@@ -43,6 +43,12 @@ export default function App() {
     subtitulo : "exercício 6"
   },
   {
+    card : '/Exercicio7',
+    cor :'cor7',
+    titulo :"Cores primárias",
+    subtitulo : "exercício 7"
+  },
+  {
     card : '/Exercicio10',
     cor :'cor10',
     titulo :"Calculo do IMC com histórico",
